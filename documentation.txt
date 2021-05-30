@@ -1,0 +1,21 @@
+Colors:
+    primary : #DAA520
+    secundary : #FFC107
+    oscure : #3E3F43 
+    claro : #FFFFFF
+    intermediate : #8D8D8D
+Inicio: #F9BDBD
+
+Estructura de la página web
+    Rutas :
+        - Home (default) '/'
+        - About us '/about'
+        - How it works '/how-it-works'
+        - Categories '/categories'
+        - Testimony '/testimony'
+    Backend : 
+        - API : https://xxxxxxxxx.com
+        - Documentation : https://xyxyxyxyxyxy.com
+
+Desafios:
+    - 

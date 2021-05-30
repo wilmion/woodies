@@ -1,0 +1,26 @@
+{
+  "name": "woodies-frontend",
+  "version": "0.1.0",
+  "description": "'Página de ventas de madera para el hogar'",
+  "main": "src/index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilmion/woodies.git"
+  },
+  "keywords": [
+    "muebles",
+    "desk",
+    "app",
+    "frontend",
+    "wood"
+  ],
+  "author": "Wilbert Aldair <wilmion92@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wilmion/woodies/issues"
+  },
+  "homepage": "https://github.com/wilmion/woodies#readme"
+}
