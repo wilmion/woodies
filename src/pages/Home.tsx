@@ -14,14 +14,16 @@ import Cucharas from '../assets/images/backgrounds/cucharas.png';
 import Rec1 from '../assets/images/backgrounds/recomendation1.jpg';
 import Rec2 from '../assets/images/backgrounds/recomendation2.jpg';
 
+import "../assets/scss/page/home.scss";
 
 const Home = () => {
     return (
         <div className="home">
             <section className="home-intro">
+                <div className="home-intro__figure"></div>
                 <div className="home-intro-info">
                     <h2 className="home-intro-info__subtitle">
-                        Are you looking for <strong>woodden furniture</strong>
+                        Are you looking for <strong>woodden furniture </strong>
                         for your place?
                     </h2>
                     <h2 className="home-intro-info__title">This is the Right Place</h2>
@@ -68,7 +70,7 @@ const Home = () => {
             <section className="home-how">
                 <div className="home-how__grid">
                     {customMock.map(i => (
-                        <CustomItem {...i} />
+                        <CustomItem {...i} key={i.title} />
                     ))}
                 </div>
                 <button className="home-how__button" type="button">Get Personalized Now</button>
@@ -81,7 +83,7 @@ const Home = () => {
             <section className="home-whatWeHave">
                 <div className="home-whatWeHave__contain">
                     {typeMock.map(t => (
-                        <Type {...t} />
+                        <Type {...t} key={t.title} />
                     ))}
                 </div>
             </section>

@@ -4,7 +4,7 @@ Colors:
     oscure : #3E3F43 
     claro : #FFFFFF
     intermediate : #8D8D8D
-Inicio: #F9BDBD
+    Inicio: #F9BDBD
 
 Estructura de la página web
     Rutas :

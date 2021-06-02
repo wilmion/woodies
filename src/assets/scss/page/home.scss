@@ -1,0 +1,135 @@
+@import "../global/common.scss";
+.home {
+  &-intro {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-around;
+    @apply items-center;
+    @apply bg-no-repeat;
+    @apply bg-cover;
+    @apply h-screen;
+    background-image: url("../../images/backgrounds/recomendation2.jpg");
+    &__figure {
+      @apply hidden;
+    }
+    &-info {
+      @apply w-full;
+      @apply py-12;
+      &__subtitle {
+        @apply text-xl;
+        @apply leading-6;
+        @apply text-oscure;
+        @apply text-center;
+      }
+      &__title {
+        @apply text-4xl;
+        @apply my-1;
+        @apply text-oscure;
+        @apply leading-tight;
+        @apply font-bold;
+        @apply text-center;
+      }
+      &__button {
+        @apply py-3;
+        @apply block;
+        @apply mx-auto;
+        @apply my-5;
+        @apply rounded-sm;
+        @apply border;
+        @apply w-44;
+        @apply text-white;
+        @apply border-none;
+        @apply font-bold;
+        @apply bg-primary;
+      }
+    }
+    &__image {
+      @apply hidden;
+    }
+  }
+}
+@screen md {
+  .home {
+    &-intro {
+      &-info {
+        &__subtitle {
+          @apply text-2xl;
+        }
+        &__title {
+          @apply text-6xl;
+        }
+      }
+    }
+  }
+}
+@screen lg {
+  .home {
+    &-intro {
+      @apply flex-row;
+      height: 800px;
+      @apply bg-none;
+      &__figure {
+        height: 800px;
+        @apply absolute;
+        @apply right-0;
+        @apply rounded-bl-10xl;
+        @apply z-negative;
+        @apply block;
+        @apply w-oneThird;
+        @apply bg-inicio;
+      }
+      &-info {
+        @apply w-oneThird;
+        @apply py-1;
+        &__subtitle {
+          @apply text-3xl;
+          @apply leading-10;
+          @apply w-seventyFive;
+          @apply text-left;
+        }
+        &__title {
+          @apply text-6xl;
+          @apply my-8;
+          @apply text-left;
+        }
+        &__button {
+          @apply m-0;
+        }
+      }
+      &__image {
+        width: 40%;
+        @apply pt-5;
+        @apply block;
+        img {
+          @apply w-full;
+          @apply h-auto;
+        }
+      }
+    }
+  }
+}
+@screen 2xl {
+  .home {
+    &-intro {
+      height: 1000px;
+      &__figure {
+        height: 1000px;
+      }
+      &-info {
+        @apply w-oneThird;
+        &__subtitle {
+          @apply text-4xl;
+          @apply leading-tight;
+        }
+        &__title {
+          @apply text-8xl;
+          @apply my-10;
+        }
+        &__button {
+          @apply text-2xl;
+          @apply w-half;
+        }
+      }
+    }
+  }
+}

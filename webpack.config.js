@@ -26,7 +26,8 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'sass-loader'
+                    'sass-loader',
+                    'postcss-loader'
                 ]
             },
             {
@@ -49,7 +50,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'css/[fullhash].css',
             linkType: 'text/css'
-        })
+        })      
     ],
     devServer : {
         port: 8080,
