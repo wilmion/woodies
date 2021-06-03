@@ -12,6 +12,7 @@ module.exports = {
           inicio: '#F9BDBD' , 
         },
         borderRadius: {
+          '5xl': '100px',
           '10xl': '200px'
         },
         zIndex: {
@@ -21,9 +22,17 @@ module.exports = {
           oneThird: '33%',
           half: '50%',
           sixtySeven: '67%',
-          seventyFive:'75%'
-        }
+          seventyFive:'75%',
+          ninety: '90%'
+        },
+        height: {
+          min: '1px'
+        },
+        fontFamily: {
+          'nunito': ['Nunito', 'sans-serif'],
+         }
       },
+      
     },
     variants: {
       extend: {},

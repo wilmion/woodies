@@ -1,0 +1,46 @@
+.type {
+  @apply w-72;
+  @apply py-5;
+  @apply mx-auto;
+  @apply my-9;
+  @apply rounded-tr-5xl;
+  @apply rounded-bl-5xl;
+  &__title {
+    @apply text-xl;
+    @apply text-oscure;
+    @apply font-extrabold;
+    @apply ml-3;
+  }
+  &__img {
+    @apply w-full;
+
+    img {
+      @apply w-full;
+      @apply my-11;
+      @apply h-auto;
+    }
+  }
+  &__button {
+    @apply block;
+    @apply ml-auto;
+    @apply mr-3;
+    @apply w-32;
+    @apply border;
+    @apply border-oscure;
+    @apply text-oscure;
+    @apply rounded-md;
+    @apply text-center;
+    @apply text-lg;
+    @apply py-2;
+    transition: 1s;
+    &:hover {
+      @apply bg-oscure;
+      @apply text-white;
+    }
+  }
+}
+@screen sm {
+  .type {
+    @apply mx-16;
+  }
+}

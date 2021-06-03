@@ -9,26 +9,31 @@ const typeMock = [
     image: Desk,
     title: "Desk",
     link: "/desks",
+    color: "bg-pink-300",
   },
   {
     image: Chair,
     title: "Chair",
     link: "/chairs",
+    color: "bg-yellow-200",
   },
   {
     image: KitchenWare,
     title: "Kitchenware",
     link: "/kitchenwares",
+    color: "bg-blue-300",
   },
   {
     image: BookSelf,
     title: "Book Shelf",
     link: "/bookshelfs",
+    color: "bg-pink-300",
   },
   {
     image: Electronics,
     title: "Electronics",
     link: "/electronics",
+    color: "bg-yellow-200",
   },
 ];
 

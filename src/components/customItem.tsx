@@ -1,5 +1,7 @@
 import React from 'react'
 
+import "../assets/scss/components/customItem.scss";
+
 interface IProps {
     image:string;
     title:string;

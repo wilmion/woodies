@@ -14,6 +14,8 @@ import Cucharas from '../assets/images/backgrounds/cucharas.png';
 import Rec1 from '../assets/images/backgrounds/recomendation1.jpg';
 import Rec2 from '../assets/images/backgrounds/recomendation2.jpg';
 
+import LogoObs from '../assets/images/ico/logo-obscure.svg';
+
 import "../assets/scss/page/home.scss";
 
 const Home = () => {
@@ -27,13 +29,16 @@ const Home = () => {
                         for your place?
                     </h2>
                     <h2 className="home-intro-info__title">This is the Right Place</h2>
-                    <button type="button" className="home-intro-info__button">Explore Furniture</button>
+                    <button type="button" className="home-intro-info__button hover-primary">Explore Furniture</button>
                 </div>
                 <picture className="home-intro__image">
                     <img src={Mesa} alt="Modern desk" />
                 </picture>
             </section>
             <div className="home-section-title">
+                <picture className="home-section-title__logo">
+                    <img src={LogoObs} alt="Logo Page" />
+                </picture>
                 <h3 className="home-section-title__title">Who we are</h3>
                 <div className="home-section-title__line"></div>
                 <h3 className="home-section-title__extratitle">ABOUT US</h3>
@@ -50,7 +55,7 @@ const Home = () => {
                         <p className="home-whoWeAre-segment-information__desc">the answer to your need for furniture with shapes, sizes and colors.</p>
                     </div>
                 </section>
-                <section className="home-whoWeAre-segment flex-reverse">
+                <section className="home-whoWeAre-segment flex-row-reverse">
                     <picture className="home-whoWeAre-segment__img">
                         <img src={Cucharas} alt="modern spoons" />
                     </picture>
@@ -63,6 +68,9 @@ const Home = () => {
                 </section>     
             </section>
             <div className="home-section-title">
+                <picture className="home-section-title__logo">
+                    <img src={LogoObs} alt="Logo Page" />
+                </picture>
                 <h3 className="home-section-title__title">How to custom</h3>
                 <div className="home-section-title__line"></div>
                 <h3 className="home-section-title__extratitle">HOW IT WORKS</h3>
@@ -73,9 +81,12 @@ const Home = () => {
                         <CustomItem {...i} key={i.title} />
                     ))}
                 </div>
-                <button className="home-how__button" type="button">Get Personalized Now</button>
+                <button className="home-how__button hover-primary" type="button">Get Personalized Now</button>
             </section>
             <div className="home-section-title">
+                <picture className="home-section-title__logo">
+                    <img src={LogoObs} alt="Logo Page" />
+                </picture>
                 <h3 className="home-section-title__title">What we have</h3>
                 <div className="home-section-title__line"></div>
                 <h3 className="home-section-title__extratitle">CATEGORIES</h3>
@@ -88,6 +99,9 @@ const Home = () => {
                 </div>
             </section>
             <div className="home-section-title">
+                <picture className="home-section-title__logo">
+                    <img src={LogoObs} alt="Logo Page" />
+                </picture>
                 <h3 className="home-section-title__title">What they say</h3>
                 <div className="home-section-title__line"></div>
                 <h3 className="home-section-title__extratitle">TESTIMONY</h3>
@@ -124,7 +138,7 @@ const Home = () => {
                     </label>
                     <input 
                         type="submit" 
-                        className="home-subscribe-form__button" 
+                        className="home-subscribe-form__button hover-primary" 
                         value="Subscribe" 
                     />
                 </form>
