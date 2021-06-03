@@ -163,7 +163,6 @@
       &__email {
         @apply block;
         @apply border;
-        @apply border-primary;
         @apply py-3;
         @apply w-32;
         @apply px-2;
@@ -171,7 +170,6 @@
         @apply rounded-none;
         @apply rounded-tl-md;
         @apply rounded-bl-md;
-        @apply text-oscure;
       }
       &__button {
         @apply block;
@@ -179,7 +177,6 @@
         @apply font-bold;
         @apply w-32;
         @apply text-base;
-        @apply bg-primary;
         @apply rounded-tr-md;
         @apply rounded-br-md;
         @apply py-3;

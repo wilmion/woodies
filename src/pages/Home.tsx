@@ -1,7 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { useHistory } from 'react-router';
 //Components
 import CustomItem from '../components/customItem';
 import Type from '../components/Type';
+import EmailSubscribe from '../components/EmailSubscribe';
 
 //Mocks
 import customMock from '../mocks/customMock';
@@ -19,6 +21,13 @@ import LogoObs from '../assets/images/ico/logo-obscure.svg';
 import "../assets/scss/page/home.scss";
 
 const Home = () => {
+
+    const history = useHistory();
+
+    const handleClickButton = (path:string):void => {
+        history.push(path);
+    }
+
     return (
         <div className="home">
             <section className="home-intro">
@@ -29,7 +38,13 @@ const Home = () => {
                         for your place?
                     </h2>
                     <h2 className="home-intro-info__title">This is the Right Place</h2>
-                    <button type="button" className="home-intro-info__button hover-primary">Explore Furniture</button>
+                    <button
+                     type="button" 
+                     onClick={(e) => handleClickButton('/furniture')} 
+                     className="home-intro-info__button hover-primary"
+                    >
+                        Explore Furniture
+                    </button>
                 </div>
                 <picture className="home-intro__image">
                     <img src={Mesa} alt="Modern desk" />
@@ -81,7 +96,13 @@ const Home = () => {
                         <CustomItem {...i} key={i.title} />
                     ))}
                 </div>
-                <button className="home-how__button hover-primary" type="button">Get Personalized Now</button>
+                <button
+                 className="home-how__button hover-primary"
+                 onClick={(e) => handleClickButton('/furniture')}  
+                 type="button"
+                >
+                    Get Personalized Now
+                </button>
             </section>
             <div className="home-section-title">
                 <picture className="home-section-title__logo">
@@ -126,22 +147,7 @@ const Home = () => {
                     <h4 className="home-subscribe-information__title">Subscribe to our newsletter</h4>
                     <p className="home-subscribe-information__desc">A monthly digest of the new WOODIES products, hot offers, and resources.</p>
                 </div>
-                <form className="home-subscribe-form">
-                    <label htmlFor="email">
-                        <input 
-                            type="email" 
-                            className="home-subscribe-form__email" 
-                            name="email" 
-                            id="email" 
-                            placeholder="Your email address" 
-                        />
-                    </label>
-                    <input 
-                        type="submit" 
-                        className="home-subscribe-form__button hover-primary" 
-                        value="Subscribe" 
-                    />
-                </form>
+                <EmailSubscribe />
             </section>
         </div>
     )

@@ -30,12 +30,14 @@ module.exports = {
         },
         fontFamily: {
           'nunito': ['Nunito', 'sans-serif'],
-         }
+        },
       },
       
     },
     variants: {
-      extend: {},
+      extend: {
+        opacity: ['disabled'],
+      },
     },
     plugins: [],
   }
