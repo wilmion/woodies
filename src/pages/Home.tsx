@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 //Components
+import Review from '../components/Review';
 import CustomItem from '../components/customItem';
 import Type from '../components/Type';
 import EmailSubscribe from '../components/EmailSubscribe';
@@ -140,7 +141,9 @@ const Home = () => {
                         </picture>
                     </div>
                 </div>
-                <div className="home-testimony__opinions"></div>
+                <div className="home-testimony__opinions">
+                    <Review />
+                </div>
             </section>
             <section className="home-subscribe">
                 <div className="home-subscribe-information">

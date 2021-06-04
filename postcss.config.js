@@ -10,13 +10,13 @@ module.exports = {
         'postcss-preset-env',
         tailwindcss,
         autoprefixer,
-        purgeCSS({
-            content: [
-                './src/assets/scss/**/*.scss',
-                './src/**/*.tsx',
-                './src/**/*.ts'
-            ]
-        }),
+        // purgeCSS({
+        //     content: [
+        //         './src/assets/scss/**/*.scss',
+        //         './src/**/*.tsx',
+        //         './src/**/*.ts'
+        //     ]
+        // }),
         cssnano({
             preset: 'default'
         })
