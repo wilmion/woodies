@@ -123,6 +123,8 @@
     }
   }
   &-testimony {
+    @apply w-ninety;
+    @apply mx-auto;
     &-images {
       &-contain {
         @apply w-60;
@@ -135,6 +137,11 @@
           @apply w-full;
         }
       }
+    }
+    &__opinions {
+      @apply mt-10;
+      @apply w-ninety;
+      @apply mx-auto;
     }
   }
   &-subscribe {
@@ -247,6 +254,9 @@
     }
     &-testimony {
       @apply mb-24;
+      @apply flex;
+      @apply justify-between;
+      @apply items-center;
       &-images {
         @apply flex;
         @apply w-ninety;
@@ -256,6 +266,10 @@
           @apply mx-0;
           @apply my-0;
         }
+      }
+      &__opinions {
+        @apply m-0;
+        @apply w-half;
       }
     }
     &-subscribe {
@@ -346,8 +360,6 @@
       }
     }
     &-testimony {
-      @apply w-ninety;
-      @apply mx-auto;
       &-images {
         @apply w-half;
       }
