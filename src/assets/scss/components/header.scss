@@ -1,2 +1,57 @@
 .header {
+  @apply absolute;
+  @apply w-full;
+  @apply py-6;
+  @apply z-10;
+  &-nav {
+    @apply flex;
+    @apply items-center;
+    @apply justify-around;
+    &__loge {
+      @apply flex;
+      @apply items-center;
+      @apply justify-center;
+      &__img {
+        @apply w-8;
+        img {
+          @apply w-full;
+          @apply h-auto;
+        }
+      }
+      &__title {
+        @apply ml-4;
+        @apply font-nunito;
+        @apply font-bold;
+        @apply text-2xl;
+        letter-spacing: 0.5em;
+      }
+    }
+    &-ul {
+      @apply flex;
+      @apply items-center;
+      &-item {
+        @apply mx-6;
+        &__link {
+          @apply text-base;
+          @apply text-oscure;
+          @apply font-nunito;
+        }
+        &__signUp {
+          @apply text-lg;
+          @apply font-nunito;
+          @apply font-bold;
+          @apply py-2;
+          @apply px-8;
+          @apply border;
+          @apply border-black;
+          @apply rounded-md;
+          transition: 1s;
+          &:hover {
+            @apply bg-oscure;
+            @apply text-white;
+          }
+        }
+      }
+    }
+  }
 }

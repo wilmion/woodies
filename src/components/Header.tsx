@@ -31,8 +31,10 @@ const Header = () => {
                     <li className="header-nav-ul-item">
                         <a href="/" className="header-nav-ul-item__link">Testimony</a>
                     </li>
+                    <li className="header-nav-ul-item">
+                        <a href="/" className="header-nav-ul-item__signUp">Sing Up</a>
+                    </li>
                 </ul>
-                <a href="/login" className="header-nav__signUp">Sing Up</a>
             </nav>
         </header>
     )
