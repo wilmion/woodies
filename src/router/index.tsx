@@ -1,6 +1,8 @@
 import React, {lazy , Suspense} from 'react';
 import { BrowserRouter as Router , Route , Switch } from 'react-router-dom';
 
+import Layout from '../layout/Layout';
+
 const Home = lazy(() => import('../pages/Home'));
 
 const App = () => {
@@ -8,7 +10,9 @@ const App = () => {
         <Suspense fallback={<div />}>
             <Router>
                 <Switch>
-                    <Route path="/" exact component={Home} />
+                    <Layout>
+                        <Route path="/" exact component={Home} />
+                    </Layout>
                 </Switch>
             </Router>
         </Suspense>
