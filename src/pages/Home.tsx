@@ -30,8 +30,7 @@ const Home = () => {
     }
     return (
         <div className="home">
-            <LazyLoad height={700} once>
-                <section className="home-intro">
+            <section className="home-intro">
                     <div className="home-intro__figure"></div>
                     <div className="home-intro-info" >
                         <h2 className="home-intro-info__subtitle">
@@ -50,8 +49,7 @@ const Home = () => {
                     <picture className="home-intro__image">
                         <img src={Mesa} alt="Modern desk" />
                     </picture>
-                </section>
-            </LazyLoad>
+            </section>
             <SectionTitle title="Who we are" extraTitle="ABOUT US" />
             <LazyLoad height={700} once>
                 <section className="home-whoWeAre">

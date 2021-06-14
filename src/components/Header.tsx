@@ -1,4 +1,5 @@
 import React from 'react'
+import { FiMenu } from 'react-icons/fi'
 
 //IMAGES
 import Logo from '../assets/images/ico/logo.svg'
@@ -8,6 +9,9 @@ import "../assets/scss/components/header.scss";
 const Header = () => {
     return (
         <header className="header">
+            <div className="header__menu">
+                <FiMenu className="header__menu__icon" />
+            </div>
             <nav className="header-nav">
                 <div className="header-nav__loge">
                     <picture className="header-nav__loge__img">
@@ -34,6 +38,7 @@ const Header = () => {
                     <li className="header-nav-ul-item">
                         <a href="/" className="header-nav-ul-item__signUp">Sing Up</a>
                     </li>
+                    <li className="header-nav-ul-item header-nav-ul-item--exit">Exit Menu</li>
                 </ul>
             </nav>
         </header>
