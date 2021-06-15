@@ -52,7 +52,7 @@ const Home = () => {
             </section>
             <SectionTitle title="Who we are" extraTitle="ABOUT US" />
             <LazyLoad height={700} once>
-                <section className="home-whoWeAre">
+                <section className="home-whoWeAre" id="about">
                     <section className="home-whoWeAre-segment">
                         <picture className="home-whoWeAre-segment__img">
                             <img src={ModernDisk} alt="modern disk" />
@@ -78,7 +78,7 @@ const Home = () => {
                 </section>
             </LazyLoad> 
             <SectionTitle title="How to custom" extraTitle="HOW IT WORKS" />
-            <section className="home-how">
+            <section className="home-how" id="howitworks">
                 <div className="home-how__grid">
                     {customMock.map(i => (
                         <CustomItem {...i} key={i.title} />
@@ -93,7 +93,7 @@ const Home = () => {
                 </button>
             </section>
             <SectionTitle title="What we have" extraTitle="CATEGORIES" />
-            <section className="home-whatWeHave">
+            <section className="home-whatWeHave" id="categories" >
                 <div className="home-whatWeHave__contain">
                     {typeMock.map(t => (
                         <Type {...t} key={t.title} />
@@ -102,7 +102,7 @@ const Home = () => {
             </section>
             <SectionTitle title="What they say" extraTitle="TESTIMONY" />
             <LazyLoad height={500} once>
-                <section className="home-testimony">
+                <section className="home-testimony" id="testimony">
                     <div className="home-testimony-images">
                         <div className="home-testimony-images-contain">
                             <picture className="home-testimony-images-contain__img">
