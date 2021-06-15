@@ -1,21 +1,16 @@
 import React from 'react'
 import { FiMenu } from 'react-icons/fi'
 
-import { setAnimation } from '../utils/setAnimation';
-
 //IMAGES
 import Logo from '../assets/images/ico/logo.svg'
 
 import "../assets/scss/components/header.scss";
 
-const Header = () => { 
+interface IProps {
+    toggleMenu:(open:boolean) => void
+}
 
-    const toggleMenu = (open:boolean) => {
-        const value:string = open ? '0%' : '-100%';
-
-        setAnimation('transform' , `translateX(${value})` , document.getElementById('menu_mobile'))
-    }
-
+const Header:React.FC<IProps> = ({toggleMenu}) => { 
     return (
         <header className="header">
             <div className="header__menu">

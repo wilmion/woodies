@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Snapshopt 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="header__menu"
+  >
+    <svg
+      className="header__menu__icon"
+      fill="none"
+      height="1em"
+      onClick={[Function]}
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line
+        x1="3"
+        x2="21"
+        y1="12"
+        y2="12"
+      />
+      <line
+        x1="3"
+        x2="21"
+        y1="6"
+        y2="6"
+      />
+      <line
+        x1="3"
+        x2="21"
+        y1="18"
+        y2="18"
+      />
+    </svg>
+  </div>
+  <nav
+    className="header-nav"
+    id="menu_mobile"
+  >
+    <div
+      className="header-nav__loge"
+    >
+      <picture
+        className="header-nav__loge__img"
+      >
+        <img
+          alt="Logo of woodies"
+          src={Object {}}
+        />
+      </picture>
+      <h1
+        className="header-nav__loge__title"
+      >
+        WOODIES
+      </h1>
+    </div>
+    <ul
+      className="header-nav-ul"
+    >
+      <li
+        className="header-nav-ul-item"
+      >
+        <a
+          className="header-nav-ul-item__link"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="header-nav-ul-item"
+      >
+        <a
+          className="header-nav-ul-item__link"
+          href="#about"
+        >
+          About Us
+        </a>
+      </li>
+      <li
+        className="header-nav-ul-item"
+      >
+        <a
+          className="header-nav-ul-item__link"
+          href="#howitworks"
+        >
+          How it works
+        </a>
+      </li>
+      <li
+        className="header-nav-ul-item"
+      >
+        <a
+          className="header-nav-ul-item__link"
+          href="#categories"
+        >
+          Categories
+        </a>
+      </li>
+      <li
+        className="header-nav-ul-item"
+      >
+        <a
+          className="header-nav-ul-item__link"
+          href="#testimony"
+        >
+          Testimony
+        </a>
+      </li>
+      <li
+        className="header-nav-ul-item"
+      >
+        <a
+          className="header-nav-ul-item__signUp"
+          href="/login"
+        >
+          Sing Up
+        </a>
+      </li>
+      <li
+        className="header-nav-ul-item header-nav-ul-item--exit"
+        onClick={[Function]}
+      >
+        Exit Menu
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
