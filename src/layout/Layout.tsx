@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 import { setAnimation } from '../utils/setAnimation';
 
@@ -16,7 +17,7 @@ const Layout:React.FC = (props) => {
     return (<>
         <Header toggleMenu={toggleMenu} />
         {Childs}
-
+        <Footer />
     </>)
 }
 
