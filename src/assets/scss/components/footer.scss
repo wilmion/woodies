@@ -1,0 +1,140 @@
+.footer {
+  @apply w-full;
+  &-content {
+    @apply block;
+    @apply w-ninety;
+    @apply mx-auto;
+    &-info {
+      @apply w-full;
+      &__line {
+        @apply w-full;
+        @apply h-0.5;
+        @apply bg-oscure;
+      }
+      &-container {
+        @apply block;
+        @apply mt-5;
+        &-column {
+          &-info {
+            @apply text-sm;
+            @apply text-intermediate;
+            @apply font-thin;
+            @apply font-nunito;
+            @apply text-center;
+            @apply my-4;
+            &-title {
+              @apply text-lg;
+              @apply text-center;
+              @apply text-oscure;
+              @apply font-semibold;
+              @apply font-nunito;
+            }
+            &-logo {
+              @apply flex;
+              @apply items-center;
+              @apply justify-center;
+              &__img {
+                @apply w-10;
+                img {
+                  @apply w-full;
+                  @apply h-auto;
+                }
+              }
+              &__title {
+                letter-spacing: 0.5rem;
+                @apply font-bold;
+                @apply font-nunito;
+                @apply text-2xl;
+                @apply ml-2;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-image {
+      @apply hidden;
+      @apply w-1/4;
+      &__image {
+        @apply w-full;
+        img {
+          @apply w-full;
+          @apply h-auto;
+        }
+      }
+    }
+  }
+
+  &-copirigth {
+    @apply absolute;
+    @apply mt-0;
+    @apply z-10;
+    @apply w-full;
+    @apply text-xs;
+    @apply text-intermediate;
+    @apply font-semibold;
+    @apply font-nunito;
+    @apply text-center;
+  }
+}
+
+@screen md {
+  .footer {
+    &-content {
+      @apply flex;
+      @apply items-center;
+      @apply justify-between;
+      &-info {
+        @apply w-full;
+        &-container {
+          @apply flex;
+          @apply items-center;
+          @apply justify-between;
+          &-column {
+            &-info {
+              @apply text-left;
+              &-title {
+                @apply text-left;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-copirigth {
+      @apply -mt-3;
+    }
+  }
+}
+
+@screen lg {
+  .footer {
+    &-content {
+      &-info {
+        @apply w-seventyFive;
+      }
+      &-image {
+        @apply block;
+      }
+    }
+  }
+}
+@screen 2xl {
+  .footer {
+    &-content {
+      &-info {
+        &-container {
+          &-column {
+            &-info {
+              @apply text-base;
+              &-title {
+                @apply text-xl;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
